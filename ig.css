@@ -1,0 +1,82 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background:#e7f2fd !important;
+}
+
+body .container {
+  max-width: 1100px;
+  position: relative;
+    width: 100%;
+    padding: 20px;
+    margin: 50px auto;
+}
+
+#filter-buttons button {
+  border-radius: 3px;
+  background: #fff;
+  border-color: transparent;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #fff;
+    border: none;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    border-radius: 6px;  
+}
+
+#filter-buttons button:hover {
+  background: #ddd;
+}
+
+#filter-buttons button.active {
+
+  background: #4070f4;
+  color: #fff;
+}
+
+.card img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    
+}
+.card_body {
+    padding: 15px 20px 20px;
+}
+
+.card_title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
+
+#filterable-cards .card {
+  width: 15rem;
+  border: 2px solid transparent;
+  box-shadow: #ddd;
+}
+
+#filterable-cards .card.hide {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #filterable-cards {
+    justify-content: center;
+  }
+
+  #filterable-cards .card {
+    width: calc(100% / 2 - 10px);
+
+  }
+}

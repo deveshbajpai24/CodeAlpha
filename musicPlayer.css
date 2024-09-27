@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.music-player {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.track-list {
+    margin-top: 20px;
+}
+
+.track-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.track-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.track-list li:hover {
+    background: #f0f0f0;
+}
